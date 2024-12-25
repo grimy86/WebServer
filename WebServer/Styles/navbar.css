@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Darknet';
+    src: url('../Fonts/DarknetItalic-rgn8B.ttf') format('truetype'),
+         url('../Fonts/Darknet-K7xOX.ttf') format('truetype');
+}
+
+.navmenu {
+    position: relative; /* Needed to position the video inside */
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between icon and links */
+    padding: 10px; /* Add padding around the menu */
+    border-bottom: 1.5px solid lightgrey; /* White bottom border */
+    z-index: 1; /* Ensure the menu is on top of the video */
+    overflow: hidden; /* Prevent overflow of the video */
+    height: 40px;
+}
+
+    .navmenu video {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute; /* Position the video absolutely */
+        width: 100%; /* Make the video cover the entire menu width */
+        height: 100%; /* Make the video cover the entire menu height */
+        object-fit: cover; /* Ensure the video covers the area properly */
+        z-index: -1; /* Place the video behind the menu content */
+    }
+
+    .navmenu img {
+        width: 40px; /* Set the icon size */
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .links {
+        display: flex; /* Align links horizontally */
+        padding: 5px; /* Padding for spacing */
+        margin-right: 50px;
+    }
+
+    .links a {
+        font-family: 'Darknet', sans-serif;
+        text-decoration: none; /* Remove underlining */
+        margin-left: 30px; /* Space between links */
+        padding: 2px; /* Padding inside the links */
+        transition: all 1s ease; /* Smooth transition for hover */
+    }
+
+    .links a:hover {
+        color: darkslategray; /* Change color on hover */
+        text-decoration: none; /* No underline on hover */
+    }

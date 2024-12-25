@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/navbar.css">
+</head> 
+<body>
+    <div class="navmenu">
+        <video autoplay muted loop>
+            <source src="/Media/background-video.mp4"/>
+        </video>
+        <img src="/Media/avaicon.png" alt="Icon" />
+        <div class="links">
+            <a href="home.html">Hello, World!</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a target="_blank" href="https://github.com/grimy86">Github</a>
+            <a target="_blank" href="mailto:grimy86@proton.me">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        const sysinfo =
+        [
+            navigator.platform,
+            navigator.userAgent,
+            navigator.language,
+            `Cookie-Enabled: ${navigator.cookieEnabled}`,
+            Intl.DateTimeFormat().resolvedOptions().timeZone,
+            Intl.DateTimeFormat().resolvedOptions().locale
+        ];
+        for (Object in sysinfo){console.log(sysinfo[Object]);}
+    </script>
+</body>
+</html>
