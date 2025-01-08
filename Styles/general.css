@@ -5,6 +5,12 @@ body {
     font-family: 'Segoe UI light', sans-serif;
 }
 
+img {
+    padding: 5%;
+    border: 0px;
+    border: transparent;
+}
+
 a {
     color: lightgray;
 }
